@@ -156,14 +156,13 @@ header .logo{
 }
 
 .advantages{
-    margin-bottom: 80px;
+    margin-bottom: 78px;
 }
 
 .advantages ul{
     position: relative;
     display: flex;
     justify-content: space-between;
-
 }
 
 .advantages li{
@@ -232,4 +231,80 @@ header .logo{
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+}
+
+.popular{
+    width: 794px;
+    margin: 0 auto;
+}
+
+.popular h2{
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.popular-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.popular-product-descr .button{
+    margin-bottom: 80px;
+}
+
+.popular-product-descr h3{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.popular-product-descr p{
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.popular-product-descr .price{
+    margin-bottom: 64px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.popular .pagination{
+    text-align: center;
+}
+
+.popular .pagination button{
+    border: none;
+    width: 50px;
+    height: 25px;
+    background: none;
+}
+
+.popular .pagination button:first-of-type{
+    background-image: url("img/arrow1.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.popular .pagination button:last-of-type{
+    background-image: url("img/arrow2.svg");
+    background-position: top;
+    background-repeat: no-repeat;
 }
