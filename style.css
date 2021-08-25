@@ -3,9 +3,10 @@ body{
     padding: 0;
     font-family: Montserrat, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 19.5px;
+    line-height: 20px;
     color: #AE7C78;
     background-color: #E5E5E5;
+    min-width: 1440px;
 }
 
 a{
@@ -41,11 +42,11 @@ ul{
 
 header{
     margin-top: 26px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
     position: relative;
-    min-width: 1440px;
+
 }
 
 header .site_nav{
@@ -89,14 +90,146 @@ header .logo{
     text-align: center;
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;    
+}
+
+.slider{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.slider_description{
+    flex-basis: 385px;
+}
+
 .slider h2{
+    margin: 0;
+    margin-bottom: 24px;
     font-family: "Playfair Display", Helvetica, sans-serif;
     font-style: normal;
-    font-size: 44px;
+    font-size: 42px;
     line-height: 59px;
-
 }
 
 .slider .slider_description-italic{
     font-style: italic;
+}
+
+.slider p{
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.button{
+    display: block;
+    width: 285px;
+    margin-bottom: 120px;
+    padding: 30px 69px;
+    box-sizing: border-box;
+
+    background-color: #D89999;
+    border-radius: 40px;
+
+    text-align: center;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.slider img{
+    border-radius: 10px;
+}
+
+.slider img:first-of-type{
+    align-self: flex-end;
+}
+
+.advantages{
+    margin-bottom: 80px;
+}
+
+.advantages ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advantages li{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 20px;
+    flex-basis: 360px; 
+}
+
+.advantages li:first-of-type{
+    margin-left: 82px;
+}
+.advantages li:first-of-type::before{
+    content: "";
+    width: 82px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: -82px;
+    background-image: url("img/delivery.svg");
+    background-repeat: no-repeat;
+}
+
+.advantages li:nth-of-type(2){
+    margin-left: 100px;
+}
+.advantages li:nth-of-type(2)::before{
+    content: "";
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: -52px;
+    background-image: url("img/fresh-flowers.svg");
+    background-repeat: no-repeat;
+}
+
+.advantages li:last-of-type{
+    margin-left: 100px;
+}
+.advantages li:last-of-type::before{
+    content: "";
+    width: 59px;
+    height: 52px;
+    position: absolute;
+    top: 0;
+    left: -59px;
+    background-image: url("img/photo.svg");
+    background-repeat: no-repeat;
+}
+
+.advantages h3{
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.advantages p{
+    margin: 0;  
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
 }
