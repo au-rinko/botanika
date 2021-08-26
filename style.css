@@ -493,3 +493,119 @@ header .logo{
 .steps p{
     margin: 0;
 }
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.news_description{
+   padding-top: 65px;
+}
+
+.news h2{
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}
+
+.news p{
+    margin: 0;
+    margin-bottom: 40px;
+    padding-right: 110px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #AE7C78;
+}
+
+.social-buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-buttons li{
+    position: relative;
+}
+
+.social-buttons li:first-of-type a::before{
+    content: "";
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/instagram_icon.svg");
+}
+
+.social-buttons li:nth-of-type(2) a::before{
+    content: "";
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-image: url("img/facebook_icon.svg");
+}
+
+.social-buttons li:last-of-type a::before{
+    content: "";
+    width: 26px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-image: url("img/twitter_icon.svg");
+}
+
+.news-img{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 285px 387px;
+    grid-template-rows: 220px 220px;
+}
+
+.reviews{
+    padding: 40px 40px;
+    border: 1px solid #AE7C78;
+}
+
+.reviews h2{
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #AE7C78;
+}
+
+.reviews ul{
+    display: flex; 
+    justify-content: space-between;
+    text-align: center;
+}
+
+.reviews li{
+    margin-right: 100px;
+}
+
+.reviews li:last-of-type{
+    margin-right: 0;
+}
+
+.reviews blockquote, .reviews p{
+    margin: 0;
+}
