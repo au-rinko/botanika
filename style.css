@@ -575,13 +575,14 @@ header .logo{
 }
 
 .reviews{
-    padding: 40px 40px;
     border: 1px solid #AE7C78;
+    margin-bottom: 80px;
 }
 
 .reviews h2{
     margin: 0;
     margin-bottom: 40px;
+    padding-top: 40px;
     font-family: "Playfair Display", Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -596,16 +597,159 @@ header .logo{
     display: flex; 
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 60px;
+    padding: 0 44px;
 }
 
 .reviews li{
-    margin-right: 100px;
-}
-
-.reviews li:last-of-type{
-    margin-right: 0;
+    flex-basis: 300px;
 }
 
 .reviews blockquote, .reviews p{
     margin: 0;
+}
+
+.reviews p{
+    margin-bottom: 16px;
+}
+
+.reviews cite{
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+
+}
+
+.contact_wrap{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.contact-form{
+    position: absolute;
+    top: 52px;
+    left: 222px;
+    background-color: #F7FAFC;
+    padding: 40px 35px;
+    width: 386px;
+    box-sizing: border-box;
+}
+
+.contact-form h3{
+    margin: 0;
+    margin-bottom: 42px;
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #AE7C78;
+}
+
+.contact-form p{
+    margin: 0;
+}
+
+.contact-form .contact-form-name{
+    margin-bottom: 15px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+.contact-form .contact-form-descr{
+    margin-bottom: 30px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+footer{
+    width: 100%;
+    background: #AE7C78;
+    margin-top: -10px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 46px;
+}
+
+footer .logo{
+    margin-right: 103px;
+}
+
+footer .site-nav{
+    flex-basis: 795px;
+}
+
+footer .site-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+footer .site-nav ul li{
+    margin-right: 68px;
+}
+
+footer .site-nav ul li:last-of-type{
+    margin-right: 0;
+}
+
+.site-nav li a{
+    margin:0;
+    display: block;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer .social-buttons{
+    width: 100px;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+footer .social-buttons li:first-of-type a::before{
+    top: 10px;
+    left: 10px;
+    background-image: url("img/instagram_icon-white.svg");
+}
+
+footer .social-buttons li:nth-of-type(2) a::before{
+    content: "";
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background-image: url("img/facebook_icon-white.svg");
+}
+
+footer .social-buttons li:last-of-type a::before{
+    content: "";
+    width: 26px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    background-image: url("img/twitter_icon-white.svg");
 }
