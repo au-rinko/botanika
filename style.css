@@ -90,6 +90,11 @@ header .logo{
     text-align: center;
 }
 
+.site_nav li a:focus, 
+.site_nav li a:hover{
+    text-decoration: underline;
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;    
@@ -145,6 +150,11 @@ header .logo{
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.button:hover, 
+.button:focus{
+    background-color: #AE7C78;
 }
 
 .slider img{
@@ -310,6 +320,13 @@ header .logo{
     background-repeat: no-repeat;
 }
 
+.popular .pagination button:hover,
+.popular .pagination button:active,
+.popular .pagination button:focus{
+    cursor: pointer;
+    transform: scale(0.75);
+}
+
 .catalog{
     margin-bottom: 80px;
 }
@@ -347,6 +364,11 @@ header .logo{
 
 .catalog li a{
     background: rgba(174, 124, 120, 0.6);
+}
+
+.catalog li a:hover,
+.catalog li a:focus{
+    background: rgba(174, 124, 120, 0.2); 
 }
 
 .catalog h3{
@@ -388,7 +410,6 @@ header .logo{
     font-size: 44px;
     line-height: 59px;
     letter-spacing: 0.02em;
-
     color: #FFFFFF;
 }
 
@@ -399,7 +420,6 @@ header .logo{
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-
     color: #FFFFFF;
 }
 
@@ -567,6 +587,17 @@ header .logo{
     background-image: url("img/twitter_icon.svg");
 }
 
+.social-buttons li:first-of-type a:hover::before,
+.social-buttons li:first-of-type a:focus::before,
+.social-buttons li:nth-of-type(2) a:hover::before,
+.social-buttons li:nth-of-type(2) a:focus::before,
+.social-buttons li:last-of-type a:hover::before,
+.social-buttons li:last-of-type a:focus::before{
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
 .news-img{
     display: grid;
     gap: 20px;
@@ -629,7 +660,12 @@ header .logo{
     position: relative;
     background-image: url("img/map.jpg");
     background-repeat: no-repeat;
-    z-index: -1;
+    /* z-index: -1; */
+}
+
+.contact_wrap iframe{
+    border: none;
+    margin: 0;
 }
 
 .contact-form{
@@ -657,6 +693,11 @@ header .logo{
     margin: 0;
 }
 
+.contact-form a:hover,
+.contact-form a:focus{
+    text-decoration: underline;
+}
+
 .contact-form .contact-form-name{
     margin-bottom: 15px;
     font-family: Montserrat, Helvetica, sans-serif;
@@ -679,7 +720,6 @@ header .logo{
 footer{
     width: 100%;
     background: #AE7C78;
-    margin-top: -10px;
 }
 
 footer .container{
@@ -720,6 +760,11 @@ footer .site-nav ul li:last-of-type{
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.site-nav li a:hover,
+.site-nav li a:focus{
+    text-decoration: underline;
 }
 
 footer .social-buttons{
